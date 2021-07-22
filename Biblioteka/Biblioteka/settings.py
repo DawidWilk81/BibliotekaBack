@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 import os
 from pathlib import Path
-
+import django_heroku
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -150,3 +150,5 @@ REST_FRAMEWORK = {
     ),
     'NON_FIELD_ERRORS_KEY': 'global',
 }
+
+django_heroku.settings(locals())
