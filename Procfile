@@ -1,1 +1,1 @@
-web: gunicorn Biblioteka/Biblioteka.wsgi
+web: gunicorn Biblioteka\Biblioteka.wsgi
