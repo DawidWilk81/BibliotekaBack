@@ -1,1 +1,3 @@
 web: gunicorn Biblioteka.wsgi
+
+heroku ps:scale=1
