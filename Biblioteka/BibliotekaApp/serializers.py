@@ -6,7 +6,7 @@ from django.contrib.auth.models import User
 class KsiazkaSerializer(serializers.ModelSerializer):
     class Meta:
         model = Ksiazka
-        fields = ['id', 'tytul', 'autor', 'zdjecie', 'uzytkownik', 'typ_okladki', 'wydawnictwo', 'data_premiery', 'liczba_stron']
+        fields = ['id', 'tytul', 'autor', 'zdjecie', 'uzytkownik', 'typ_okladki', 'wydawnictwo', 'data_premiery', 'liczba_stron', 'is_active']
 
 
 class KsiazkaSerializerMini(serializers.ModelSerializer):

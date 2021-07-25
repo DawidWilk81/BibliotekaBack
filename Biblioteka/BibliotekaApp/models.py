@@ -19,7 +19,7 @@ class Ksiazka(models.Model):
     liczba_stron = models.IntegerField(default=1)
     uzytkownik = models.CharField(max_length=50, default='')
     zdjecie = models.ImageField(upload_to='okladki', default=None)
-
+    is_active = models.IntegerField(default=1)#1 - active 0 - inactive
     def __str__(self):
         return self.tytul
 
