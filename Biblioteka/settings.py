@@ -26,15 +26,15 @@ SECRET_KEY = 'django-insecure-)^!c3d7!7u92wmyd=mku649u%^d)bcynkpmrqf44)t#mi+6-4-
 DEBUG = True
 
 
-ALLOWED_HOSTS = ['127.0.0.1']
+ALLOWED_HOSTS = ['127.0.0.1','bibliotekaapp.herokuapp.com']
 
 
 CORS_ORIGIN_WHITELIST = (
-    'http://localhost:4200', '127.0.0.1'
+    'http://localhost:4200', '127.0.0.1','http://bibliotekaapp.herokuapp.com'
 
 )
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:4200", 'https://127.0.0.1'
+    "http://localhost:4200", 'https://127.0.0.1','http://bibliotekaapp.herokuapp.com'
 
 ]
 
